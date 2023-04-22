@@ -35,6 +35,7 @@
               <th>N°</th>
               <th>Título</th>
               <th>Descripción</th>
+              <th>Fecha Límite</th>
               <th>Acciones</th>
             </tr>
           </thead>
@@ -49,6 +50,9 @@
                   </strong></td>
                 <td>
                   <%= tasks[i].description %>
+                </td>
+                <td>
+                  <%= tasks[i].deadline %>
                 </td>
                 <td>
                   <a class="<%= tasks[i].status ? 'btn btn-success' : 'btn btn-dark'%>"
